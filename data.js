@@ -7,15 +7,15 @@ window.JS20_DATA = {
   editions: {
     2026: {
       year: 2026,
-      dateLabel: '17 OCT 2026',
+      dateLabel: '2026년 10월 17일',
       dateISO: '2026-10-17',
-      kickoff: 'TBA',
-      venue: 'VENUE TBA',
+      kickoff: '미정',
+      venue: '장소 추후 공개',
       phase: 'pre', // pre | live | post
-      tagline: 'BACK TOGETHER. BACK ON THE PITCH.',
+      tagline: '다시 모여, 다시 뛴다.',
       teams: [
-        { id: 'green', name: 'TEAM GREEN', short: 'GRN', score: null },
-        { id: 'white', name: 'TEAM WHITE', short: 'WHT', score: null }
+        { id: 'green', name: '그린팀', short: 'GREEN', score: null },
+        { id: 'white', name: '화이트팀', short: 'WHITE', score: null }
       ],
       players: [],
       awards: {

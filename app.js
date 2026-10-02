@@ -10,17 +10,17 @@
   set('heroYear', e.year);
   set('footerYear', e.year);
   set('dateLabel', e.dateLabel);
-  set('kickoff', e.kickoff || 'TBA');
+  set('kickoff', e.kickoff || '미정');
   set('tagline', e.tagline);
   set('teamAName', e.teams[0].name);
   set('teamBName', e.teams[1].name);
   set('teamACode', e.teams[0].short);
   set('teamBCode', e.teams[1].short);
-  set('matchKickoff', e.kickoff || 'TBA');
-  set('matchVenue', e.venue || 'VENUE TBA');
+  set('matchKickoff', e.kickoff || '미정');
+  set('matchVenue', e.venue || '장소 추후 공개');
   set('matchDate', e.dateLabel.replace(String(e.year), '').trim());
 
-  const status = e.phase === 'post' ? 'FULL TIME' : e.phase === 'live' ? 'LIVE' : 'SCHEDULED';
+  const status = e.phase === 'post' ? '경기 종료' : e.phase === 'live' ? '경기 중' : '경기 예정';
   set('statusPill', status);
 
   // Calendar-day D-Day calculation in Korea Standard Time (Asia/Seoul).
@@ -58,12 +58,12 @@
   if (!players.length) {
     draftButton.disabled = false;
     draftButton.addEventListener('click', () => {
-      draftMessage.textContent = 'LINEUP PENDING — 선수 명단이 들어오면 이 버튼이 실제 팀 추천을 실행합니다.';
-      draftButton.textContent = 'SQUAD NOT READY YET';
-      setTimeout(() => { draftButton.innerHTML = 'BUILD THE TEAMS <span>↻</span>'; }, 1700);
+      draftMessage.textContent = '라인업 대기 중 — 선수 명단이 들어오면 실제 팀 추천을 실행합니다.';
+      draftButton.textContent = '선수 명단 준비 중';
+      setTimeout(() => { draftButton.innerHTML = '팀 추천하기 <span>↻</span>'; }, 1700);
     });
   } else {
-    draftMessage.textContent = `${players.length} PLAYERS READY · 클릭할 때마다 밸런스를 다시 계산합니다.`;
+    draftMessage.textContent = `${players.length}명 준비 완료 · 클릭할 때마다 밸런스를 다시 계산합니다.`;
     draftButton.addEventListener('click', () => {
       const shuffled = [...players].sort(() => Math.random() - .5);
       const teams = [[], []], totals = [0, 0];
@@ -72,7 +72,7 @@
         const t = totals[0] <= totals[1] ? 0 : 1;
         teams[t].push(p); totals[t] += p.rating || 1;
       });
-      draftMessage.textContent = `추천 완료 · GREEN ${totals[0]} : WHITE ${totals[1]} · 최종 확정 전 자유롭게 다시 추천 가능`;
+      draftMessage.textContent = `추천 완료 · 그린팀 ${totals[0]} : 화이트팀 ${totals[1]} · 최종 확정 전 다시 추천할 수 있습니다.`;
       renderSquads(teams);
       document.querySelector('#squads').scrollIntoView({ behavior:'smooth' });
     });
@@ -82,7 +82,7 @@
     const board = $('squadBoard');
     board.innerHTML = teams.map((team, idx) => `
       <div style="padding:28px;min-width:0;">
-        <div style="font:900 12px/1 Arial;letter-spacing:2px;color:${idx===0?'#b9ff4b':'#fff'};margin-bottom:18px">${idx===0?'TEAM GREEN':'TEAM WHITE'}</div>
+        <div style="font:900 12px/1 Arial;letter-spacing:2px;color:${idx===0?'#b9ff4b':'#fff'};margin-bottom:18px">${idx===0?'그린팀':'화이트팀'}</div>
         ${team.map((p,n)=>`<div style="display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-top:1px solid rgba(255,255,255,.12);font-size:13px"><b>${String(n+1).padStart(2,'0')}</b><span>${p.name}</span></div>`).join('')}
       </div>`).join('');
     board.style.gridTemplateColumns = '1fr 1fr';
