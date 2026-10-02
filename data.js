@@ -10,7 +10,7 @@ window.JS20_DATA = {
       dateLabel: '2026년 10월 17일',
       dateISO: '2026-10-17',
       kickoff: '미정',
-      venue: '장소 추후 공개',
+      venue: '세종풋살파크',
       phase: 'pre', // pre | live | post
       tagline: '다시 모여, 다시 뛴다.',
       teams: [
@@ -29,6 +29,10 @@ window.JS20_DATA = {
         name: '신선포도농원',
         brand: 'FRESH PODO',
         url: 'https://m.smartstore.naver.com/fresh_podo'
+      },
+      president: {
+        title: '풋살컵 회장',
+        name: '박준철'
       }
     }
   }

@@ -17,7 +17,7 @@
   set('teamACode', e.teams[0].short);
   set('teamBCode', e.teams[1].short);
   set('matchKickoff', e.kickoff || '미정');
-  set('matchVenue', e.venue || '장소 추후 공개');
+  set('matchVenue', e.venue || '세종풋살파크');
   set('matchDate', e.dateLabel.replace(String(e.year), '').trim());
 
   const status = e.phase === 'post' ? '경기 종료' : e.phase === 'live' ? '경기 중' : '경기 예정';
