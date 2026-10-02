@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#03180e" />
   <meta name="color-scheme" content="dark" />
-  <title>JS20 FUTSAL CUP 2026 — 장성고 20회 졸업생 풋살대회</title>
-  <meta name="description" content="2026.10.17 · 장성고등학교 20회 졸업생 연례 풋살대회. 팀 추천, 스쿼드 공개, 경기 결과와 수상 기록까지." />
+  <title>장성고20회 2026 풋살컵</title>
+  <meta name="description" content="2026.10.17 · 장성고20회 2026 풋살컵. 팀 추천부터 라인업 공개, 경기 결과와 수상 기록까지." />
   <link rel="canonical" href="https://yeongseon.github.io/js20-futsal/" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
@@ -14,16 +14,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="JS20 FUTSAL CUP" />
   <meta property="og:locale" content="ko_KR" />
-  <meta property="og:title" content="JS20 FUTSAL CUP 2026" />
-  <meta property="og:description" content="10.17 · 두 팀, 한 경기, 그리고 지나치게 진지한 월드컵급 연출." />
+  <meta property="og:title" content="장성고20회 2026 풋살컵" />
+  <meta property="og:description" content="10.17 · 장성고 20회 졸업생, 두 팀, 한 경기. 월드컵처럼 진지하게." />
   <meta property="og:url" content="https://yeongseon.github.io/js20-futsal/" />
   <meta property="og:image" content="https://yeongseon.github.io/js20-futsal/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="JS20 Futsal Cup — Jangseong High School 20th alumni annual futsal event" />
+  <meta property="og:image:alt" content="장성고20회 2026 풋살컵" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JS20 FUTSAL CUP 2026" />
-  <meta name="twitter:description" content="장성고 20회 졸업생 연례 풋살대회 · 17 OCT 2026" />
+  <meta name="twitter:title" content="장성고20회 2026 풋살컵" />
+  <meta name="twitter:description" content="장성고20회 2026 풋살컵 · 10월 17일" />
   <meta name="twitter:image" content="https://yeongseon.github.io/js20-futsal/og.png" />
 
   <link rel="stylesheet" href="./style.css" />
@@ -35,148 +35,148 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="JS20 FUTSAL CUP home">
       <img src="./logo.svg" alt="JS20 FUTSAL CUP" />
-      <span><b>JS20</b><small>FUTSAL CUP</small></span>
+      <span><b>장성고20회</b><small>2026 풋살컵</small></span>
     </a>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#match">THE MATCH</a>
-      <a href="#draft">TEAM DRAFT</a>
-      <a href="#squads">SQUADS</a>
-      <a href="#awards">AWARDS</a>
+      <a href="#match">경기</a>
+      <a href="#draft">팀 추천</a>
+      <a href="#squads">라인업</a>
+      <a href="#awards">시상</a>
     </nav>
-    <a class="edition" href="#archive"><span class="edition-label">EDITION</span><b id="editionYear">2026</b></a>
+    <a class="edition" href="#archive"><span class="edition-label">연도</span><b id="editionYear">2026</b></a>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-lines" aria-hidden="true"></div>
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="dot"></span> JANGSEONG HIGH SCHOOL · CLASS 20</div>
-        <h1><span>FUTSAL</span><span>CUP <em id="heroYear">2026</em></span></h1>
-        <p class="tagline" id="tagline">BACK TOGETHER. BACK ON THE PITCH.</p>
+        <div class="eyebrow"><span class="dot"></span> 장성고등학교 · 20회 졸업생</div>
+        <h1><span id="heroYear">2026</span><span>풋살컵</span></h1>
+        <p class="tagline" id="tagline">다시 모여, 다시 뛴다.</p>
         <div class="hero-meta">
-          <div><small>MATCHDAY</small><strong id="dateLabel">17 OCT 2026</strong></div>
-          <div><small>KICK-OFF</small><strong id="kickoff">TBA</strong></div>
-          <div><small>FORMAT</small><strong>2 TEAMS · 1 MATCH</strong></div>
+          <div><small>경기일</small><strong id="dateLabel">17 OCT 2026</strong></div>
+          <div><small>시작시간</small><strong id="kickoff">TBA</strong></div>
+          <div><small>경기방식</small><strong>2팀 · 1경기</strong></div>
         </div>
       </div>
       <div class="hero-mark reveal delay-1">
         <div class="mark-frame">
           <img src="./logo.svg" alt="JS20 tournament crest" />
           <div class="big20">20</div>
-          <div class="mark-caption">ANNUAL ALUMNI FUTSAL</div>
+          <div class="mark-caption">매년 다시 만나는 20회 풋살</div>
         </div>
       </div>
       <div class="hero-bottom reveal delay-2">
         <div class="countdown" id="countdown" aria-live="polite">
-          <span class="countdown-kicker">MATCHDAY COUNTDOWN</span>
-          <strong id="daysLeft">D-15</strong><span>TO MATCHDAY</span>
+          <span class="countdown-kicker">경기일까지</span>
+          <strong id="daysLeft">D-15</strong><span>남았습니다</span>
         </div>
-        <a class="primary-cta" href="#draft">TEAM DRAFT <span>↘</span></a>
+        <a class="primary-cta" href="#draft">팀 추천 <span>↘</span></a>
       </div>
     </section>
 
     <section class="ticker" aria-label="Event ticker">
       <div class="ticker-track">
-        <span>JS20 FUTSAL CUP</span><i>●</i><span>17 OCT 2026</span><i>●</i><span>TEAM DRAFT</span><i>●</i><span>FRESH PODO</span><i>●</i>
-        <span>JS20 FUTSAL CUP</span><i>●</i><span>17 OCT 2026</span><i>●</i><span>TEAM DRAFT</span><i>●</i><span>FRESH PODO</span><i>●</i>
+        <span>장성고20회 2026 풋살컵</span><i>●</i><span>10월 17일</span><i>●</i><span>팀 추천</span><i>●</i><span>FRESH PODO</span><i>●</i>
+        <span>장성고20회 2026 풋살컵</span><i>●</i><span>10월 17일</span><i>●</i><span>팀 추천</span><i>●</i><span>FRESH PODO</span><i>●</i>
       </div>
     </section>
 
     <section class="section match-section" id="match">
       <div class="section-heading reveal">
-        <div><span class="section-index">01</span><span class="kicker">THE MATCH</span></div>
-        <h2>ONE MATCH.<br/>ALL THE BRAGGING RIGHTS.</h2>
+        <div><span class="section-index">01</span><span class="kicker">경기</span></div>
+        <h2>단 한 경기.<br/>자존심은 전부.</h2>
       </div>
       <div class="match-card reveal">
-        <div class="match-status"><span class="status-pill" id="statusPill">SCHEDULED</span><span id="matchVenue">VENUE TBA</span></div>
+        <div class="match-status"><span class="status-pill" id="statusPill">경기 예정</span><span id="matchVenue">VENUE TBA</span></div>
         <div class="versus">
           <article class="team team-a">
             <span class="team-code" id="teamACode">GRN</span>
             <div class="team-badge badge-green">G</div>
             <h3 id="teamAName">TEAM GREEN</h3>
-            <p>SQUAD REVEAL PENDING</p>
+            <p>라인업 공개 예정</p>
           </article>
           <div class="vs-center">
             <span class="match-date" id="matchDate">17 OCT</span>
             <strong>VS</strong>
-            <span class="match-time">KICK-OFF <b id="matchKickoff">TBA</b></span>
+            <span class="match-time">시작 <b id="matchKickoff">TBA</b></span>
           </div>
           <article class="team team-b">
             <span class="team-code" id="teamBCode">WHT</span>
             <div class="team-badge badge-white">W</div>
             <h3 id="teamBName">TEAM WHITE</h3>
-            <p>SQUAD REVEAL PENDING</p>
+            <p>라인업 공개 예정</p>
           </article>
         </div>
         <div class="match-foot">
-          <span>JANGSEONG 20TH CLASS · ANNUAL FUTSAL</span>
-          <span class="micro">UNOFFICIAL ALUMNI EVENT</span>
+          <span>장성고 20회 · 연례 풋살대회</span>
+          <span class="micro">비공식 동문 행사</span>
         </div>
       </div>
     </section>
 
     <section class="section draft-section" id="draft">
       <div class="section-heading reveal">
-        <div><span class="section-index">02</span><span class="kicker">TEAM DRAFT</span></div>
-        <h2>NO DRAW.<br/>WE BUILD THE TEAMS.</h2>
+        <div><span class="section-index">02</span><span class="kicker">팀 추천</span></div>
+        <h2>조추첨 대신,<br/>우리가 팀을 만든다.</h2>
       </div>
       <div class="draft-grid">
         <article class="draft-console reveal">
           <div class="console-top">
-            <span>TEAM RECOMMENDATION ENGINE</span>
-            <span class="console-light">READY</span>
+            <span>팀 추천 엔진</span>
+            <span class="console-light">준비</span>
           </div>
           <div class="draft-visual" aria-hidden="true">
             <div class="pitch-line pitch-circle"></div>
-            <div class="draft-side left"><b>GREEN</b><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span></div>
-            <div class="draft-side right"><b>WHITE</b><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span></div>
+            <div class="draft-side left"><b>그린팀</b><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span></div>
+            <div class="draft-side right"><b>화이트팀</b><span>?</span><span>?</span><span>?</span><span>?</span><span>?</span></div>
           </div>
-          <button class="draft-button" id="draftButton" type="button">BUILD THE TEAMS <span>↻</span></button>
+          <button class="draft-button" id="draftButton" type="button">팀 추천하기 <span>↻</span></button>
           <p id="draftMessage">참가자 명단이 확정되면 팀 추천 기능이 활성화됩니다.</p>
         </article>
         <div class="draft-copy reveal delay-1">
-          <div class="rule"><span>01</span><div><b>PLAYER POOL</b><p>참가자 명단을 확정한다.</p></div></div>
-          <div class="rule"><span>02</span><div><b>TEAM RECOMMENDATION</b><p>두 팀의 인원과 전력을 균형 있게 추천한다.</p></div></div>
-          <div class="rule"><span>03</span><div><b>FINAL ADJUSTMENT</b><p>친구들끼리 한 번 더 조정하고 최종 확정.</p></div></div>
-          <div class="rule"><span>04</span><div><b>SQUAD REVEAL</b><p>월드컵 발표처럼 팀별 라인업을 공개한다.</p></div></div>
+          <div class="rule"><span>01</span><div><b>참가 선수</b><p>참가자 명단을 확정한다.</p></div></div>
+          <div class="rule"><span>02</span><div><b>팀 추천</b><p>두 팀의 인원과 전력을 균형 있게 추천한다.</p></div></div>
+          <div class="rule"><span>03</span><div><b>최종 조정</b><p>친구들끼리 한 번 더 조정하고 최종 확정.</p></div></div>
+          <div class="rule"><span>04</span><div><b>라인업 공개</b><p>월드컵 발표처럼 팀별 라인업을 공개한다.</p></div></div>
         </div>
       </div>
     </section>
 
     <section class="section squads-section" id="squads">
       <div class="section-heading reveal">
-        <div><span class="section-index">03</span><span class="kicker">SQUADS</span></div>
-        <h2>THE NAMES<br/>ARE COMING.</h2>
+        <div><span class="section-index">03</span><span class="kicker">라인업</span></div>
+        <h2>누가 어느 팀일까?<br/>곧 공개됩니다.</h2>
       </div>
       <div class="squad-board reveal" id="squadBoard">
         <div class="squad-empty">
           <span class="giant-question">?</span>
-          <div><b>SQUAD ANNOUNCEMENT</b><p>라인업 확정 후 공개됩니다.</p></div>
-          <span class="coming">COMING SOON</span>
+          <div><b>라인업 발표</b><p>라인업 확정 후 공개됩니다.</p></div>
+          <span class="coming">공개 예정</span>
         </div>
       </div>
     </section>
 
     <section class="section awards-section" id="awards">
       <div class="section-heading reveal">
-        <div><span class="section-index">04</span><span class="kicker">AFTER THE FINAL</span></div>
-        <h2>GLORY GETS<br/>RECORDED.</h2>
+        <div><span class="section-index">04</span><span class="kicker">경기 종료 후</span></div>
+        <h2>오늘의 기록을<br/>남깁니다.</h2>
       </div>
       <div class="award-grid reveal" id="awardGrid">
-        <article class="award-card champion"><span class="award-icon">★</span><small>CHAMPIONS</small><b>—</b><p>FINAL WINNER</p></article>
-        <article class="award-card"><span class="award-icon">⚽</span><small>GOLDEN BOOT</small><b>—</b><p>TOP SCORER</p></article>
-        <article class="award-card"><span class="award-icon">↗</span><small>ASSIST KING</small><b>—</b><p>TOP ASSISTS</p></article>
-        <article class="award-card sponsor-award"><span class="award-icon">◆</span><small>FRESH PODO MVP</small><b>—</b><p>PLAYER OF THE MATCH</p></article>
+        <article class="award-card champion"><span class="award-icon">★</span><small>우승팀</small><b>—</b><p>2026 우승</p></article>
+        <article class="award-card"><span class="award-icon">⚽</span><small>득점왕</small><b>—</b><p>최다 득점</p></article>
+        <article class="award-card"><span class="award-icon">↗</span><small>도움왕</small><b>—</b><p>최다 도움</p></article>
+        <article class="award-card sponsor-award"><span class="award-icon">◆</span><small>FRESH PODO MVP</small><b>—</b><p>경기 MVP</p></article>
       </div>
       <p class="award-note reveal">경기 종료 후 결과, 득점왕, 도움왕, MVP와 우승팀을 이 페이지에 기록합니다.</p>
     </section>
 
     <section class="sponsor-section">
       <div class="sponsor-wrap reveal">
-        <div class="sponsor-label">OFFICIAL EVENT PARTNER</div>
+        <div class="sponsor-label">공식 후원</div>
         <a class="sponsor-lockup" id="sponsorLink" href="https://m.smartstore.naver.com/fresh_podo" target="_blank" rel="noopener noreferrer">
           <div class="grape-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div><span>PRESENTED BY</span><strong>FRESH PODO</strong><small>신선포도농원</small></div>
+          <div><span>후원</span><strong>FRESH PODO</strong><small>신선포도농원</small></div>
           <b class="sponsor-arrow">↗</b>
         </a>
       </div>
@@ -184,21 +184,21 @@
 
     <section class="archive section" id="archive">
       <div class="archive-copy reveal">
-        <span class="kicker">ANNUAL EDITION</span>
-        <h2>ONE SITE.<br/>EVERY YEAR.</h2>
+        <span class="kicker">연례 대회</span>
+        <h2>한 곳에서,<br/>매년 이어갑니다.</h2>
         <p>매년 날짜·선수·결과만 업데이트하면 같은 주소에서 계속 사용할 수 있도록 구성했습니다. 이전 대회 기록도 에디션별로 쌓을 수 있습니다.</p>
       </div>
       <div class="edition-card reveal delay-1">
-        <div><span>CURRENT EDITION</span><b>2026</b></div>
-        <p>17 OCT · PRE-MATCH</p>
+        <div><span>현재 대회</span><b>2026</b></div>
+        <p>10월 17일 · 경기 전</p>
         <i>→</i>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand"><img src="./logo.svg" alt="" /><div><b>JS20 FUTSAL CUP</b><span>JANGSEONG HIGH SCHOOL · CLASS 20</span></div></div>
-    <div class="footer-note">FIFA-inspired parody presentation for a private alumni event. Not affiliated with or endorsed by FIFA or Jangseong High School.</div>
+    <div class="footer-brand"><img src="./logo.svg" alt="" /><div><b>장성고20회 2026 풋살컵</b><span>장성고등학교 · 20회 졸업생</span></div></div>
+    <div class="footer-note">FIFA 월드컵 사이트의 경기일 연출을 참고한 비공식 동문 행사 페이지입니다. FIFA 및 장성고등학교 공식 사이트가 아닙니다.</div>
     <div class="footer-year">© <span id="footerYear">2026</span> JS20</div>
   </footer>
 </body>
