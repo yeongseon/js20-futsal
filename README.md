@@ -1,5 +1,9 @@
 # JS20 FUTSAL CUP
 
+🌐 **Live site:** https://yeongseon.github.io/js20-futsal/
+
+📦 **Repository:** https://github.com/yeongseon/js20-futsal
+
 장성고등학교 20회 졸업생 연례 풋살대회 공식(?) 사이트.
 
 - **2026 Matchday:** 2026-10-17
