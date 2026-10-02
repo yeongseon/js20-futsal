@@ -26,6 +26,16 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Build social images
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq librsvg2-bin
+          rsvg-convert -w 1200 -h 630 og.svg -o og.png
+          rsvg-convert -w 512 -h 512 logo.svg -o apple-touch-icon.png
+          touch .nojekyll
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
